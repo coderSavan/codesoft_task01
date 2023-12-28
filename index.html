@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Landing Page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- <link rel="stylesheet" href="cardSlider/style.css" /> -->
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    
+  </head>
+  <body>
+    <div class="main">
+      <div class="first"></div>
+      <div class="second"></div>
+    </div>
+    <div class="center">
+      <section id="home">
+        <div class="left animate__animated animate__slideInDown">
+          <div class="text">
+            <h4>EAT'S UP</h4>
+            <h2>Get Your<br />Food Now</h2>
+            <p>
+           
+"Explore a world of flavors on our menu – a culinary journey blending savory delights and sweet indulgences. Every bite is a celebration of taste, crafted with passion and the finest ingredients."
+            </p>
+            <button id="orderbtn">Order now</button>
+          </div>
+        </div>
+
+        <div class="right animate__animated animate__slideInUp">
+
+          <span onclick="listItems()" class="hamburger-icon">&#9776;</span>
+          <nav>
+            <ul id="navitems">
+              <li ><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#menu">Menu</a></li>
+              <li><a href="#delivery">Delivery</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+
+
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="images/img1.png" /></div>
+              <div class="swiper-slide"><img src="images/img2.png" /></div>
+              <div class="swiper-slide"><img src="images/img3.png" /></div>
+              <div class="swiper-slide"><img src="images/img4.png" /></div>
+              <div class="swiper-slide"><img src="images/img5.png" /></div>
+              <div class="swiper-slide"><img src="images/img7.png" /></div>
+              <div class="swiper-slide"><img src="images/b5.png" /></div>
+              <div class="swiper-slide"><img src="images/b6.png" /></div>
+              <div class="swiper-slide"><img src="images/img4.png" /></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+      <section id="about">
+        <div class="image ">
+          <img src="images/brand.png" />
+        </div>
+        <div class="content">
+          <h2>About Us</h2>
+          <p>
+            At Eat's Up, we're all about making your taste buds dance with joy.
+            Eat's Up is your  go-to spot.
+            Our chefs pour their heart into every dish, using fresh,
+            local ingredients to create a symphony of deliciousness. Join us on
+            a culinary journey where good times and great flavors collide. Eat's
+            Up – where every meal is an experience to savor!
+          </p>
+        </div>
+      </section>
+    <section id="menu">
+      <div class="heading"><h1>&mdash;Menu&mdash;</h1></div>
+      <div class="menu-item">
+       
+        <img src="images/fran.png.jpg" alt="Food Item 1">
+        <h3>Frankie</h3>
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p class="price">Rs.399</p>
+        <button class="order-btn">Order Now</button>
+      </div>
+    
+      <div class="menu-item">
+        <img src="images/b6.png" alt="Food Item 2">
+        <h3>Tasty Treat </h3>
+        <p> Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p class="price">Rs.999</p>
+        <button class="order-btn">Order Now</button>
+      </div>
+
+      <div class="menu-item">
+        <img src="images/img7.png" alt="Food Item 2">
+        <h3>Tasty Treat </h3>
+        <p> Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p class="price">Rs.999</p>
+        <button class="order-btn">Order Now</button>
+      </div>
+
+      <div class="menu-item">
+       
+        <img src="images/fran.png.jpg" alt="Food Item 1">
+        <h3>Frankie</h3>
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p class="price">Rs.399</p>
+        <button class="order-btn">Order Now</button>
+      </div>
+     </section>
+  
+      <section id="delivery">
+        <div class="leftside ">
+          <h2>Receive your <br />Food your</h2>
+          <h2>Doorsteps</h2>
+          <h5>Here's how it works</h5>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
+            harum molestias est ipsa quasi, nemo quibusdam possimus voluptatum
+            sapiente modi?
+          </p>
+        </div>
+        <div class="rightside">
+          <img src="images/deli.png " />
+        </div>
+      </section>
+      <section id="contact">  
+<div class="contact-info">
+  <header>
+    <h1>Book Your Table</h1>
+</header>
+       <h2>Contact Us</h2>
+       <form>
+          <input type="text" id="name" name="name" placeholder="Name" required>
+
+          <input type="email" id="email" name="email" placeholder="Email" required>
+
+          <textarea id="message" name="message" rows="4" placeholder="Message" required></textarea>
+
+          <button id="submit">Submit</button>
+      </form>  
+   <footer>
+      <div class="social-icons">
+          <img src="images/twitter-fill.png" alt="Twitter">
+          <img src="images/facebook-circle-fill.png" alt="Facebook">
+          <img src="images/instagram-fill.png" alt="Instagram">
+      </div>
+      <p>&copy; 2023 Food Landing Page. All rights reserved.</p>
+    </div>
+  </footer>
+</div>
+      </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+    <!-- <script src="cardSlider/script.js""></script> -->
+  </body>
+</html>
